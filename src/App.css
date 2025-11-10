@@ -1,0 +1,149 @@
+.headercontainer {
+  display: flex;
+  padding: 1rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Headerのハンバーガーメニュー */
+
+.hamburger {
+  position: fixed;
+  top: 0px;
+  right: 20px;
+  z-index: 150;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.hamburger.is-active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.hamburger span {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 2px;
+  background-color: #d9d9d9;
+  transition: transform 0.3s;
+}
+
+.hamburger.is-active span {
+  background-color: #ffffff;
+}
+
+.hamburger span:nth-child(1) {
+  top: 30%;
+}
+
+.hamburger span:nth-child(2) {
+  top: 60%;
+}
+
+.hamburger span:nth-child(3) {
+  top: 90%;
+}
+
+/* 共通 */
+
+.sp-show {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp-show {
+    display: block;
+  }
+  .sp-none {
+    display: none;
+  }
+}
+
+/* セクション０１ セクションヘッダー*/
+
+.Sec02container {
+  padding: 65px;
+}
+.Sec02text {
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+}
+
+/* セクションテキスト */
+.Sect {
+  display: flex;
+  justify-content: center;
+}
+
+/* ボタン */
+/* .BtnContainer {
+  padding: 26px;
+  text-align: center;
+}
+.Btn {
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 60px;
+  padding: 1rem;
+} */
+/* .Btn {
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  gap: 40px; 
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 60px;
+  padding: 1rem;
+} */
+
+.Btn {
+  text-align: center;
+  padding: 26px;
+}
+
+.button-2 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4em 1.6em;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #000000 solid;
+  border-radius: 20px;
+}
+
+/*footer部分 */
+
+.Footer {
+  background-color: #000000;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer.Img {
+  color: #cd3796;
+}
